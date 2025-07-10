@@ -1,0 +1,111 @@
+# HTML
+
+- Hypertext
+    - Textos puros, livros, revistas, jornais
+    - Links: acessar outros documantos
+    - Imagengs, videos, audios
+
+- Markup
+    - Marcacao
+    - Tags: &lt;a&gt; Link &lt;/a&gt;
+    - Atributos: <a href:"https://rocketseat.com.br">
+    - Globais: id, class, ...
+
+- Language
+    - Linguagem
+    - Sintaxe: maneira certa de escrever
+
+
+# HTTP
+
+- Hypertext
+- Transfer
+    - Transferencia
+- Protocol
+    - Protocolo
+    - Conjunto de regras
+
+# URL
+
+- Uniform
+    - Uniforme
+- Resource
+    - Recurso
+- Locator
+    - Localizador
+Encontrar um recurso (html, css, js, pdf, png, jpg, mp4, mp3, ...)
+- Endereco
+
+# IP
+
+- Internet
+    - Rede mundial de computadores
+- Protocol
+    - Protocolo
+    -Conjunto de regras
+-Endereco do computador
+
+# DNS
+
+- Domain
+    - Dominio
+- Name 
+    - Nome
+- Server
+    - Servidor 
+
+# CSS
+
+- Cascading
+    - Cascata
+    - Regras das escritas
+    - Hierarquia
+    - Especificidade
+- Style
+    - Estilo
+- Sheet
+    - Folha
+
+De um arquivo que terá na sua sintaxe, declaracoes, propredades e valores
+A partir disso o HTML é impactado visualmente
+
+- Declaracao
+- Seletor
+- Propriedade e valor
+
+# JS
+
+- Linguagem de programacao
+- Browsers
+- Input -> Process -> Output 
+- Variáveis
+- Function
+    - Funcao
+    - Agrupamento e reuso de código
+    - Sequencia lógica
+    - Saída
+- Gemini (IA): esperar uma resposta
+- Mexer no meu navegador
+- Estrutura de dados
+- Estrutura de decisao
+- Algoritmo: sequencia de passos lógica, de maneira ordenada, a fim de chegar a alguma conclusao (limitada)
+- Lógica (pensamento computacional)
+    - Abstracao
+    - Decomposicao
+    - Algoritmo
+    - Reconhecimento de padrao
+- Tipos de dados
+    - Number (Número)
+    - String (Textos) ( " ", ' ', ` `)
+    - Boolean (true, false)
+    - Objects
+    - ...
+
+# DOM
+
+- Document
+    - Documento
+- Object
+    - Objeto
+- Model
+    - Modelo
