@@ -24,6 +24,8 @@
 - Protocol
     - Protocolo
     - Conjunto de regras
+- Methods HTTP (verbos): Get, Post, Patch/Put, Delete
+- Headers (cabecalho): Instrucoes/Informacoes extras para cada chamada
 
 # URL
 
@@ -109,3 +111,10 @@ A partir disso o HTML é impactado visualmente
     - Objeto
 - Model
     - Modelo
+
+# API
+
+- Aplication
+- Programming
+- Interface
+- JSON: JavaScript Object Notation
