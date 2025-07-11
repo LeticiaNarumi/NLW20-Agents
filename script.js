@@ -6,35 +6,39 @@ const aiResponse = document.getElementById("aiResponse")
 const form = document.getElementById("form")
 
 
-//AIzaSyBj1grKPmLxGve6ffa1G11mzb0sS4jswro
 const perguntarAI = async (question, game, apiKey) => {
     const model = "gemini-2.0-flash"
     const geminiURL = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
-    const pergunta = ''
+    const pergunta = `olha, eu tenho esse jogo ${game} e queria saber ${question}`
 
     const contents = [{
         parts: [{
             text: pergunta
         }]
     }]
+    // Chamada API
+    
+    const response = await fetch(geminiURL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            contents
+        })
+    })
+
+    const data = await response.json()
+    console.log({ data })
+    return
 }
-// Chamada API
 
-const response = await fetch(geminiURL, {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    }
-})
-
-const enviarFormulario = (evento) => {
+const enviarFormulario = async (evento) => {
     evento.preventDefault()
     const apiKey = apiKeyInput.value
     const game = gameSelect.value
     const question = questionInput.value
-
-    console.log ({apiKey, game, question})
 
     if(apiKey == '' || game == '' || question == '') {
         alert('Por favor, preencha todos os campos')
@@ -47,8 +51,7 @@ askButton.classList.add('loading')
 
 try {
     // Perguntar para AI
-    perguntarAI(question, game, apiKey)
-
+    await perguntarAI(question, game, apiKey)
 } catch (error) {
     console.log("Erro: ", error)
 }finally {
