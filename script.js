@@ -11,25 +11,22 @@ const perguntarAI = async (question, game, apiKey) => {
     const model = "gemini-2.0-flash"
     const geminiURL = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
-    const pergunta = '
-    '
+    const pergunta = ''
 
     const contents = [{
         parts: [{
             text: pergunta
         }]
     }]
-
-
+}
 // Chamada API
 
 const response = await fetch(geminiURL, {
-    method: 'POST'
-    headers {
+    method: 'POST',
+    headers: {
         'Content-Type': 'application/json'
     }
 })
-}
 
 const enviarFormulario = (evento) => {
     evento.preventDefault()
@@ -62,6 +59,4 @@ try {
 
 }
 
-form.addEventListener("submit", enviarFormulario)
-
-
+form.addEventListener("submit", enviarFormulario);
